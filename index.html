@@ -9,39 +9,108 @@
 </head>
 <body>
     <div class="main">
-        <div class="left">colorpicker</div>
+        <div class="left" id='left'>
+            <button onclick='colorP(0)' class="grid-item" value='#605326' style='background-color: #605326; border-color:#605326'></button>
+            <button onclick='colorP(1)' class="grid-item" value='red' style='background-color: red; border-color:red'></button>
+            <button onclick='colorP(2)' class="grid-item" value='green' style='background-color: green; border-color:green'></button>
+            <button onclick='colorP(3)' class="grid-item" value='#fe12fe' style='background-color: #fe12fe; border-color:#fe12fe'></button>
+            <button onclick='colorP(4)' class="grid-item" value='rebeccapurple' style='background-color:rebeccapurple; border-color:rebeccapurple'></button>
+            <button onclick='colorP(5)' class="grid-item" value='orange' style='background-color:orange; border-color:orange'></button>
+            <button onclick='colorP(6)' class="grid-item" value='#B62525' style='background-color:#B62525; border-color:#B62525'></button>
+            <button onclick='colorP(7)' class="grid-item" value='#5951D2' style='background-color:#5951D2; border-color:#5951D2'></button>
+            <button onclick='colorP(8)' class="grid-item" value='#6C6383' style='background-color:#6C6383; border-color:#6C6383'></button>
+            <button onclick='colorP(9)' class="grid-item" value='#68991E' style='background-color:#68991E; border-color:#68991E'></button>
+            <button onclick='colorP(10)' class="grid-item" value='#32A9DC' style='background-color:#32A9DC; border-color:#32A9DC'></button>
+            <button onclick='colorP(11)' class="grid-item" value='black' style='background-color:black; border-color:black'></button>
+            <button onclick='colorP(12)' class="grid-item" value='yellow' style='background-color:yellow; border-color:yellow'></button>
+            <button onclick='colorP(13)' class="grid-item" value='white' style='background-color:white; border-color:white'></button>
+            <button onclick='colorP(14)' class="grid-item" value='#DA0B8E' style='background-color:#DA0B8E; border-color:#DA0B8E'></button>
+            <button onclick='colorP(15)' class="grid-item" value='#58284F' style='background-color:#58284F; border-color:#58284F'></button>
+            <button onclick='colorP(16)' class="grid-item" value='#5EFF1A' style='background-color:#5EFF1A; border-color:#5EFF1A'></button>
+            <button onclick='colorP(17)' class="grid-item" value='#7300FF' style='background-color:#7300FF; border-color:#7300FF'></button>
+            <button onclick='colorP(18)' class="grid-item" value='#4D4D4D' style='background-color:#4D4D4D; border-color:#4D4D4D'></button>
+            <button onclick='colorP(19)' class="grid-item" value='#58DDFE' style='background-color:#58DDFE; border-color:#58DDFE'></button>
+            <button onclick='colorP(20)' class="grid-item" value='#EDF2CA' style='background-color:#EDF2CA; border-color:#EDF2CA'></button>
+            <button onclick='colorP(21)' class="grid-item" value='#E0CCFF' style='background-color:#E0CCFF; border-color:#E0CCFF'></button>
+            <button onclick='colorP(22)' class="grid-item" value='#D95959' style='background-color:#D95959; border-color:#D95959'></button>
+            <button onclick='colorP(23)' class="grid-item" value='#D4E1F3' style='background-color:#D4E1F3; border-color:#D4E1F3'></button>
+            <button onclick='HexBackg()' class="grid-item" value='yellowgreen'>RNDM</button>
+            <p>Выбери свой цвет!<input type="color" class="inCol"></p>
+        </div>
         <div class="center">
-            <div class="area"><textarea placeholder="Введите текст" name="" id="" cols="30" rows="10"></textarea></div>
+            <div class="area"><textarea placeholder="Введите текст" style="font-size:20px; border-radius:2px"  name="" id="textarea" cols="30" rows="10" class="textar" ></textarea></div>
             <div class="border">
-                <select name="width" id="" class="border-width">
-                    <option value="1px">1px</option>
-                    <option value="2px">2px</option>
-                    <option value="3px">3px</option>
-                </select>
-                <select name="style" id="" class="border-style">
-                    <option value="solid">solid</option>
-                    <option value="dashed">dashed</option>
-                    <option value="dotted">dotted</option>
-                </select>
-                <select name="color" id="" class="border-color">
-                    <option value="red">red</option>
-                    <option value="green">green</option>
-                    <option value="blue">blue</option>
-                </select>
-            </div>
-        </textarea> </div>
-        <div class="right">
-            <div class="font">
-                <button class="font-plus">font +</button>
-                <button class="font-minus">font -</button>
-            </div>
-            <div class="area-color">colorpicker-text</div>
-            <div class="radius">
-                <button class="radius-plus">radius +</button>
-                <button class="radius-minus">radius -</button>
+                <div class="selectwidth">
+                    <select name="width" id="selectwidth" class="border-width">
+                        <option value="1px">1px</option>
+                        <option value="2px">2px</option>
+                        <option value="3px">3px</option>
+                        <option value="4px">4px</option>
+                        <option value="5px">5px</option>
+                        <option value="6px">6px</option>
+                        <option value="7px">7px</option>
+                        <option value="8px">8px</option>
+                        <option value="9px">9px</option>
+                        <option value="10px">10px</option>
+                    </select>
+                </div>
+                <div class="selectstl">
+                    <select name="style" id="selectstyle" class="border-style">
+                        <option value="solid">solid</option>
+                        <option value="dashed">dashed</option>
+                        <option value="dotted">dotted</option>
+                        <option value="double">double</option>
+                        <option value="groove">groove</option>
+                        <option value="ridge">ridge</option>
+                        <option value="inset">inset</option>
+                        <option value="outset">outset</option>
+                    </select>
+                </div>
+                <div class="selectclr">
+                    <select name="color" id="selectcolor" class="border-color">
+                        <option class='black1' value="black">black</option>
+                        <option class='red' value="red">red</option>
+                        <option class='green3' value="green">green</option>
+                        <option class='blue4' value="blue">blue</option>
+                        <option class='aqua' value="aqua">aqua</option>
+                        <option class='pink' value="pink">pink</option>
+                    </select>
+                    <button class='buttons' type="submit" value="Выбрать" onclick="getAll()">Выбрать</button>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="right">
+            <div class="font">
+                <button onclick="plusFontSize()" class="font-plus buttons">font +</button>
+                <button onclick="minusFontSize()"class="font-minus buttons">font -</button>
+            </div>
+            <div class="radius">
+                <button onclick="plusRadius()" class="radius-plus buttons">radius +</button>
+                <button onclick="minusRadius()" class="radius-minus buttons">radius -</button>
+            </div>
+            <div class="text-color">
+                <button onclick='colorsT(0)' class="text-item" style='background-color:rebeccapurple; border-color:rebeccapurple'></button>
+                <button onclick='colorsT(1)' class="text-item" style='background-color: green; border-color:green'></button>
+                <button onclick='colorsT(2)' class="text-item" style='background-color: #605326; border-color:#605326'></button>
+                <button onclick='colorsT(3)' class="text-item" style='background-color: red; border-color:red'></button>
+                <button onclick='colorsT(4)' class="text-item" style='background-color: #fe12fe; border-color:#fe12fe'></button>
+                <button onclick='colorsT(5)' class="text-item" style='background-color:orange; border-color:orange'></button>
+                <button onclick='colorsT(6)' class="text-item" style='background-color:#5951D2; border-color:#5951D2'></button>
+                <button onclick='colorsT(7)' class="text-item" style='background-color:#68991E; border-color:#68991E'></button>
+                <button onclick='colorsT(8)' class="text-item" style='background-color:black; border-color:black'></button>
+                <button onclick='colorsT(9)' class="text-item" style='background-color:white; border-color:white'></button>
+                <button onclick='colorsT(10)' class="text-item" style='background-color:#58284F; border-color:#58284F'></button>
+                <button onclick='colorsT(11)' class="text-item" style='background-color:#5EFF1A; border-color:#5EFF1A'></button>
+                <button onclick='colorsT(12)' class="text-item" style='background-color:#FE4646; border-color:#FE4646'></button>
+                <button onclick='colorsT(13)' class="text-item" style='background-color:#4D4D4D; border-color:#4D4D4D'></button>
+                <button onclick='colorsT(14)' class="text-item" style='background-color:#58DDFE; border-color:#58DDFE'></button>
+                <button onclick='colorsT(15)' class="text-item" style='background-color:#EDF2CA; border-color:#EDF2CA'></button>
+                <button onclick='colorsT(16)' class="text-item" style='background-color:#B62525; border-color:#B62525'></button>
+                <button onclick='colorsT(17)' class="text-item" style='background-color:#E0CCFF; border-color:#E0CCFF'></button>
+                <button onclick='colorsT(18)' class="text-item" style='background-color:#D95959; border-color:#D95959'></button>
+                <button onclick='HexText()' class="text-item" >RNDM</button>
+            </div>
+        </div>
     <script src="/js/script.js"></script>
 </body>
 </html>
